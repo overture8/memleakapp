@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 gem 'newrelic_rpm'
 gem 'skylight'
 gem 's3io'
+gem 'rbtrace'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

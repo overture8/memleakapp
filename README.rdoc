@@ -1,5 +1,7 @@
 == README
 
+heroku config:set AWS_ACCESS_KEY_ID=<key> AWS_SECRET_ACCESS_KEY=<secret> AWS_REGION=<region> AWS_BUCKET=nitb-staging
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
