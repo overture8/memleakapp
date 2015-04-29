@@ -4,6 +4,7 @@ require 's3io'
 
 ObjectSpace.trace_object_allocations_start
 GC.start()
-s3_object = S3.buckets[ENV['AWS_BUCKET']].objects['heap_dump.json']
+s3 = Aws::S3::Resource.new
+s3_object = s3.bucket(ENV['AWS_BUCKET']).object('heap_dump.json')
 ObjectSpace.dump_all(output: S3io.open(s3_object, 'w'))
 
