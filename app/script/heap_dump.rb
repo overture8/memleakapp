@@ -1,5 +1,6 @@
-require "objspace"
+require 'objspace'
 require 'aws-sdk'
+require 'rbtrace'
 
 ObjectSpace.trace_object_allocations_start
 GC.start()
