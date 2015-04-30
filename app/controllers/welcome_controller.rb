@@ -1,5 +1,8 @@
 class WelcomeController < ApplicationController
   def index
+    $leak ||= ''
+    $leak << ("a" * 1.megabytes)
+    render :text => "Mem Leak App"
   end
 
   def profile
